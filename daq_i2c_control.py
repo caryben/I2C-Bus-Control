@@ -137,7 +137,7 @@ while(x<10):
 
 
 
-# switch to reading mode of data lines so status register can be read
+# switch to reading mode of data lines so status register can be read back from microcontrollers.
 data.StopTask()
 status_code = np.array([0,0,0,0,0,0,0,0], dtype = np.uint8)
 data_readback.CreateDIChan("Dev2/port0/line0:7","",DAQmx_Val_ChanPerLine*8)
